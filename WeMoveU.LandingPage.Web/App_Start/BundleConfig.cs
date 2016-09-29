@@ -24,7 +24,9 @@ namespace WeMoveU.LandingPage.Web.App_Start
                      "~/ Scripts / touchswipe.js",
                      "~/ Scripts / webpro.js"
                      ));
-
+            bundles.Add(new ScriptBundle("~/budles/val").Include(
+                "~/Scripts/jquery.validate.js",
+                "~/Scripts/jquery.validate.min.js"));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/site_global.css",
                       "~/Content/index.css"));

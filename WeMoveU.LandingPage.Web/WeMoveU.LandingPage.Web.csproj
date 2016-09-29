@@ -142,44 +142,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\blank.gif" />
-    <Content Include="Content\images\check-circle-outline-512.png" />
-    <Content Include="Content\images\facebook.png" />
-    <Content Include="Content\images\instagram.png" />
-    <Content Include="Content\images\loading.gif" />
-    <Content Include="Content\images\logo_bx_tipografia.png" />
-    <Content Include="Content\images\money.png" />
-    <Content Include="Content\images\one-finger-click %281%29.png" />
-    <Content Include="Content\images\piggy-bank.png" />
-    <Content Include="Content\images\transacoes-imobiliarias.jpg" />
-    <Content Include="Content\images\twitter.png" />
-    <Content Include="Content\images\u1366-17-fs.png" />
-    <Content Include="Content\images\u1366-17-m.png" />
-    <Content Include="Content\images\u1366-17-r.png" />
-    <Content Include="Content\images\u1366-17.png" />
-    <Content Include="Content\images\u1414-9.png" />
-    <Content Include="Content\images\u1426-13.png" />
-    <Content Include="Content\images\woman-using-digital-tablet-with-laptop-in-background.jpg" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\assets\bootstrap\js\npm.js" />
+    <Content Include="Content\assets\css\animate.css" />
+    <Content Include="Content\assets\css\media-queries.css" />
+    <Content Include="Content\assets\css\style.css" />
+    <Content Include="Content\img\logo_bx.gif" />
     <Content Include="Content\index.css" />
     <Content Include="Content\site_global.css" />
+    <Content Include="Content\img\logo_bx.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="scripts\html5shiv.js" />
-    <Content Include="scripts\jquery-1.8.3.min.js" />
-    <Content Include="scripts\jquery.musemenu.js" />
-    <Content Include="scripts\jquery.museoverlay.js" />
-    <Content Include="scripts\jquery.musepolyfill.bgsize.js" />
-    <Content Include="scripts\jquery.scrolleffects.js" />
-    <Content Include="scripts\jquery.watch.js" />
-    <Content Include="scripts\museutils.js" />
-    <Content Include="scripts\musewpslideshow.js" />
-    <Content Include="scripts\pie.js" />
-    <Content Include="scripts\touchswipe.js" />
-    <Content Include="scripts\webpro.js" />
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -192,7 +175,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\EnviaEmail.cs" />
+    <Compile Include="Models\DadosEbook.cs" />
+    <Compile Include="Models\EnviaDadosEbook.cs" />
+    <Compile Include="Models\EnviaDadosRelatorio.cs" />
+    <Compile Include="Models\EnviaResposta.cs" />
     <Compile Include="Models\DadosCadastro.cs" />
     <Compile Include="Models\Validadores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,6 +189,19 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\assets\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Content\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\Michaell.pubxml" />
+    <Content Include="Views\Home\Ebook.cshtml" />
+    <Content Include="Views\Shared\_Ebook.cshtml" />
+    <Content Include="Views\Home\Agradecimento.cshtml" />
+    <Content Include="Views\Shared\_Agradecimento.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,6 +211,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\assets\font-awesome\" />
+    <Folder Include="Content\assets\ico\" />
+    <Folder Include="Content\assets\img\" />
+    <Folder Include="Content\assets\js\" />
+    <Folder Include="Content\css\" />
+    <Folder Include="Content\vendor\" />
+    <Folder Include="scripts\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

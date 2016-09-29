@@ -9,36 +9,28 @@ namespace WeMoveU.LandingPage.Web.Models
 {
     public class DadosCadastro
     {
-        [Required(ErrorMessage = "Entre com o nome")]
+        [Required (ErrorMessage ="Nome Inválido")]
         [DisplayName("Nome:")]
-        [MinLength(5, ErrorMessage = "Nome com no mínimo 5 caracteres")]
+        [MinLength(3,ErrorMessage ="Mínimo 3 caracteres")]
         public string Nome { get; set; }
-        [Required(ErrorMessage = "Entre com o email")]
+
+        [Required(ErrorMessage = "Sobrenome Inválido")]
+        [DisplayName("Sobrenome:")]
+        [MinLength(3, ErrorMessage = "Mínimo 3 caracteres")]
+        public string Sobrenome { get; set; }
+
+        [Required(ErrorMessage = "Email Inválido")]
         [DisplayName("Email:")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        [Required (ErrorMessage ="Entre com o website")]
-        [DataType(DataType.Html)]
-        [DisplayName ("Website:")]
+        [Required(ErrorMessage = "Website Inválido")]
+        [DisplayName("Website:")]
+        [DataType(DataType.Url)]
         public string Website { get; set; }
-        [Required (ErrorMessage ="Entre com o Endereço")]
-        [DisplayName ("Endereço:")]
-        public string Endereco { get; set; }
-        [Required(ErrorMessage = "Entre com a Cidade")]
-        [DisplayName("Cidade:")]
-        public string Cidade { get; set; }
-        [Required(ErrorMessage = "Entre com o Estado")]
-        [DisplayName("Estado:")]
-        public string Estado { get; set; }
-        [Required(ErrorMessage = "Entre com o CEP")]
-        [DisplayName("CEP:")]
         
-        public int Cep { get; set; }
-        [Required(ErrorMessage = "Entre com o País")]
-        [DisplayName("País:")]
-        public string Pais { get; set; }
-        [Required(ErrorMessage = "Entre com a Empresa")]
-        [DisplayName("Empresa:")]
-        public string Empresa { get; set; }
+        [DisplayName ("Mensagem:")]
+        public string Mensagem { get; set; }
+        
+       
     }
 }
