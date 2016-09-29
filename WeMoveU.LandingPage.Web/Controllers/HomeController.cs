@@ -25,7 +25,7 @@ namespace WeMoveU.LandingPage.Web.Controllers
                 EnviaDadosRelatorio eDados = new EnviaDadosRelatorio();
                 string retornoResposta = Email.enviaResposta(dados.Email, dados.Nome);
 
-                string retornoDados = eDados.enviaEmailDadosRelatorio("michaellrg@gmail.com", dados);
+                string retornoDados = eDados.enviaEmailDadosRelatorio("souzaf.vitor@gmail.com; contato@wemoveu.com.br;", dados);
                 return Redirect("https://pagseguro.uol.com.br/v2/checkout/payment.html?code=F15D9AC14D4D041774025F92054893BE");
 
             }
@@ -48,7 +48,7 @@ namespace WeMoveU.LandingPage.Web.Controllers
             if (ModelState.IsValid)
             {
                 EnviaDadosEbook Email = new EnviaDadosEbook();
-                string retorno = Email.enviaEmailDadosEbook("michaellrg@gmail.com", dados);
+                string retorno = Email.enviaEmailDadosEbook("souzaf.vitor@gmail.com; contato@wemoveu.com.br;", dados);
                 return View("Agradecimento");
             }
             else

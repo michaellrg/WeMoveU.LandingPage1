@@ -153,6 +153,10 @@
     <Content Include="Content\assets\css\animate.css" />
     <Content Include="Content\assets\css\media-queries.css" />
     <Content Include="Content\assets\css\style.css" />
+    <Content Include="Content\assets\img\backgrounds\1%402x.jpg" />
+    <Content Include="Content\assets\img\backgrounds\1.jpg" />
+    <Content Include="Content\assets\img\logo%402x.png" />
+    <Content Include="Content\assets\img\logo.png" />
     <Content Include="Content\img\logo_bx.gif" />
     <Content Include="Content\index.css" />
     <Content Include="Content\site_global.css" />
@@ -213,7 +217,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\assets\font-awesome\" />
     <Folder Include="Content\assets\ico\" />
-    <Folder Include="Content\assets\img\" />
     <Folder Include="Content\assets\js\" />
     <Folder Include="Content\css\" />
     <Folder Include="Content\vendor\" />

@@ -331,3 +331,10 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #e36da1; outline: 0; 
 .footer-menu ul { margin: 0; padding: 0; list-style: none; }
 .footer-menu li { display: inline; margin-left: 20px; }
 .footer-menu a, .footer-menu a:hover, .footer-menu a:focus { color: #888; border-color: #888; }
+
+.validation-summary-errors-alerts ul li {
+border: 1px solid black;
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap
+}
