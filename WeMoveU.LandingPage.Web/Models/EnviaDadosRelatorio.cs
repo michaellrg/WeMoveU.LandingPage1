@@ -42,7 +42,7 @@ namespace WeMoveU.LandingPage.Web.Models
                 //abaixo com outro endereço
 
                 objEmail.To.Add(emailDestinatario);
-
+                objEmail.To.Add("contato@wemoveu.com.br");
                 //se quiser enviar uma cópia oculta pra alguém, utilize a linha abaixo:
 
                 //objEmail.Bcc.Add(emailOculto);

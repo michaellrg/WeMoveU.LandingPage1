@@ -17,8 +17,7 @@ namespace WeMoveU.LandingPage.Web.Models
         [DisplayName("Email:")]
         [DataType(DataType.EmailAddress, ErrorMessage = "Email Inválido")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Telefone inválido.")]
-        [RegularExpression(@"^\d{4}[-]{1}\d{4}$", ErrorMessage = "Telefone inválido. Informe ####-####.")]
+        [Required(ErrorMessage = "Telefone inválido.")]  
         public string Telefone { get; set; }
     }
 }
